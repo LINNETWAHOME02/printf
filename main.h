@@ -4,7 +4,5 @@
 #include <string.h>
 #include <stdarg.h>
 #include <unistd.h>
-int _printf(const char *formaat, ...);
-int _sprintf(char *str, const char *string,...);
-size_t _strlen(const char *str);
+int _printf(const char *format, ...);
 #endif
