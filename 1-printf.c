@@ -30,8 +30,8 @@ int _printf(const char *format, ...)
 				int this_integer = va_arg(var_args, int);
 				char this_str[20];
 
-				sprintf(this_str, "%d", this_integer);
-				count += write(1, this_str, strlen(this_str));
+				_sprintf(this_str, "%d", this_integer);
+				count += write(1, this_str, _strlen(this_str));
 			}
 			format++;
 		}
